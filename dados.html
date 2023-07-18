@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!--doctype informa ao agente de usuario a versão do html que deve ser renderizada-->
+<html lang="pt-br">
+    <head>
+        <title> Primeiro Formulario </title>
+        <meta charset="utf-8">
+        <meta name="author" content="Daisy">
+        <meta name="description" content="Primeiro Formulario">
+        <meta name="keywords" content="html5, tecnologia">
+        <link rel="stylesheet" href="estilo.css">
+        <link rel="stylesheet" href="dados.html">
+    </head>
+    <body>
+        <div class="box">
+            <div class="img-box">
+                <img src="cadastro.png">
+            </div>
+        <div class="form-box">
+            <h2>Dados Cadatrais</h2>
+            <form action="#">
+                <div class="input-group">
+                    <label for="endereco"> Endereço Completo</label>
+                    <input type="text" id="endereco" placeholder="Digite seu endereço completo" required>
+                </div>
+                <div class="input-group w50">
+                    <label for="estado"> Estado</label>
+                  <select class="option" required>
+                    <option value="0"></option>
+                    <option value="SP">São Paulo</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                  </select>
+                </div>
+                <div class="input-group w50">
+                    <label class="area">Área de interesse</label>
+                    <select class="option" required>
+                        <option value="0"></option>
+                        <option value="html" id="python">Python</option>
+                        <option value="css" id="c#">C#</option>
+                        <option value="javascript" id="js">JavaScript</option>
+                      </select>
+                </div>
+                <div class="input-group">
+                    <form action="processa_imagem_perfil.php" method="post" enctype="multipart/form-data">
+                        <label class="input-group">Currículo<input type="file" name="image"></label>
+                        <button name="enviar" value="submit">Enviar</button>
+                    </form>
+                </div>
+                    
+                </div>
+                
+            </form>
+
+        </div>    
+            
+    </body>
+    
